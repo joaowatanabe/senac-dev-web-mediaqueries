@@ -1,0 +1,46 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  font-family: "DM Sans", sans-serif;
+}
+
+.logo {
+  width: 178px;
+  height: 66px;
+  margin-top: 52px;
+  margin-left: 52px;
+  margin-bottom: 135px;
+}
+
+.cabecalho {
+  background-color: #353945;
+  color: #fff;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container__cabecalho {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  height: 100%;
+}
+
+.cabecalho__imagem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.main {
+  background-color: #fff;
+  color: #000;
+  height: 100vh;
+  width: 100vw;
+}
