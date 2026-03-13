@@ -22,6 +22,14 @@ body {
   width: 100vw;
 }
 
+.cabecalho__principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
 .container__cabecalho {
   display: flex;
   flex-direction: column;
@@ -31,11 +39,14 @@ body {
   height: 100%;
 }
 
+.cabecalho__texto {
+  width: 420px;
+}
+
 .cabecalho__imagem {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
 .main {
