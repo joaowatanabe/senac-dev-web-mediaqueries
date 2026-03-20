@@ -7,6 +7,10 @@ body {
   font-family: "DM Sans", sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .logo {
   width: 178px;
   height: 66px;
@@ -33,14 +37,23 @@ body {
 .container__cabecalho {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: start;
   gap: 16px;
   height: 100%;
 }
 
 .cabecalho__texto {
   width: 420px;
+  height: 60px;
+}
+
+.cabecalho__texto p {
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
 }
 
 .cabecalho__imagem {
@@ -54,4 +67,224 @@ body {
   color: #000;
   height: 100vh;
   width: 100vw;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__login {
+  display: flex;
+  flex-direction: column;
+  width: 424px;
+  gap: 30px;
+}
+
+.container__main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.main__titulo {
+  font-family: Inter;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.main__texto {
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  color: #27272e;
+}
+
+.container__form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.container__form form label {
+  color: #425466;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 8px;
+}
+
+.container__form form input {
+  width: 424px;
+  height: 48px;
+  background-color: #f1f5f9;
+  border-radius: 8px;
+  border: none;
+  padding-left: 16px;
+  margin-bottom: 16px;
+}
+
+.container__form .forgot {
+  color: #777e90;
+
+  text-align: right;
+  font-family: Inter;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+  margin-bottom: 16px;
+}
+
+.container__form form .signIn {
+  display: flex;
+  width: 424px;
+  padding: 16px 24px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 12px;
+  border-radius: 90px;
+  background: #141416;
+  color: #fcfcfd;
+  font-family: "DM sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.container__form form .signIn:hover {
+  background: #27272e;
+}
+
+.container__form form .form__texto {
+  color: #718096;
+  text-align: center;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.08px;
+}
+
+.form__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  margin-top: 24px;
+}
+
+.form__social button {
+  width: 52px;
+  height: 52px;
+  border-radius: 26px;
+  border: none;
+  background-color: #fff;
+  box-shadow:
+    0 0 1px 0 rgba(12, 26, 75, 0.2),
+    0 1px 3px 0 rgba(50, 50, 71, 0.1);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__login .signUp {
+  color: #718096;
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.main__login .signUp a {
+  color: #141416;
+  text-decoration: none;
+}
+
+.main__login .signUp a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    min-width: 0;
+  }
+
+  .cabecalho,
+  .main {
+    width: 100%;
+    height: auto;
+  }
+
+  .logo {
+    margin: 24px 0 48px 24px;
+    width: 140px;
+    height: auto;
+  }
+
+  .logo img {
+    width: 100%;
+    height: auto;
+  }
+
+  .cabecalho__principal {
+    gap: 40px;
+    padding: 0 24px 32px;
+  }
+
+  .container__cabecalho {
+    width: 100%;
+  }
+
+  .cabecalho__texto {
+    width: 100%;
+    height: auto;
+  }
+
+  .cabecalho__texto p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .cabecalho__imagem img {
+    width: min(100%, 280px);
+    height: auto;
+  }
+
+  .main {
+    padding: 32px 24px;
+  }
+
+  .main__login {
+    width: 100%;
+    max-width: 424px;
+    gap: 20px;
+  }
+
+  .container__form form input,
+  .container__form form .signIn {
+    width: 100%;
+  }
+
+  .container__form form .signIn {
+    padding: 12px 20px;
+    font-size: 14px;
+    border-radius: 999px;
+  }
 }

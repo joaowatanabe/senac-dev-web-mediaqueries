@@ -35,7 +35,7 @@
           <h2 class="main__titulo">Welcome Back!</h2>
           <p class="main__texto">Meet the good taste today</p>
         </div>
-        <div>
+        <div class="container__form">
           <form action="">
             <label for="email">E-mail</label>
             <input
@@ -44,22 +44,42 @@
               id="email"
               placeholder="Type your e-mail"
             />
-            <label for="">Password</label>
+            <label for="password">Password</label>
             <input
               type="password"
               name="password"
               id="password"
               placeholder="Type your password"
             />
-            <a href="#">Forgot Password?</a>
-            <button type="submit">Sign In</button>
+            <a class="forgot" href="#">Forgot Password?</a>
+            <button class="signIn" type="submit">Sign In</button>
             <p class="form__texto">or do it via other accounts</p>
-            <div>
-              <button><a href="#"></a></button>
+            <div class="form__social">
+              <button type="button">
+                <a href="#"
+                  ><img
+                    src="./assets/Desktop/form-login/search 1.svg"
+                    alt="google"
+                /></a>
+              </button>
+              <button type="button">
+                <a href="#"
+                  ><img
+                    src="./assets/Desktop/form-login/Desktop/form-login/Vector.svg"
+                    alt="facebook"
+                /></a>
+              </button>
+              <button type="button">
+                <a href="#"
+                  ><img
+                    src="./assets/Desktop/form-login/Vector.svg"
+                    alt="twitter"
+                /></a>
+              </button>
             </div>
           </form>
         </div>
-        <p>Don`t have an account? <a href="#">Sign Up</a></p>
+        <p class="signUp">Don`t have an account? <a href="#">Sign Up</a></p>
       </section>
     </main>
   </body>
